@@ -1,0 +1,13 @@
+s-type   = 1
+x0       = 0.0
+y0       = 0.0
+z0       = 0.0
+z1       = 0.0
+proj     = alpha
+e0       = 0.125000  $ MeV/n (PHITS dung don vi nay cho ion). Alpha A=4 -> tong dong nang = 0.125000*4 = 0.500000 MeV = 500 keV
+dir      = 1
+r0       = 0.02
+
+  totfact = 1.0
+
+[ Material ]

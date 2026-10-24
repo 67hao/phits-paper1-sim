@@ -1,0 +1,267 @@
+Replica of Soliman (2025) Fig.1 design - WATER-ONLY BASELINE - FISSION spectrum (U-235 Watt) - v2
+$ Doi chieu voi: File nay dung de lay phi_water(r) trong Eq.(3)/(4) - KHONG co target, toan bo r=10->100 la nuoc (CAT NGAN, chi tinh toi reg 146)
+
+$OMP=40
+
+[ Parameters ]
+icntl    = 0
+nucdata  = 1
+maxcas   = 1000000    $ TANG so hat de dam bao thong ke du (r~100cm), voi 45 lop 2cm
+maxbch   = 1
+file(6)  = phits_water_fission.out
+
+[ Source ]
+$ Vo cau nguon r=10cm, phat theo PHO PHAN HACH WATT U-235 (khong phai Cf-252!)
+totfact  = 1.0
+s-type   = 9
+x0       = 0.0
+y0       = 0.0
+z0       = 0.0
+r1       = 10.001   $ ban kinh TRONG cua vo cau nguon - lech nhe khoi bien de tranh surface-skimming
+r2       = 10.001   $ ban kinh NGOAI = r1 -> nguon la mat cau mong (surface source)
+dir      = 1        $ cosine=1 tuong doi voi phap tuyen huong ra ngoai tu tam cau
+proj     = neutron
+
+$ Pho Watt U-235 (fission) - GIA TRI a,b PHO BIEN TRONG GIAO TRINH, KHONG PHAI SO LIEU GOC CUA BAI BAO
+e-type = 5
+eg1    = 0.01
+eg2    = 15.0
+nm     = 200
+set: c1[0.988]
+set: c2[2.249]
+f(x) = exp(-x/c1)*sinh(sqrt(c2*x))
+
+[ Material ]
+$ Nuoc - moi truong hydrogenous (giong bai bao dung "FLUKA predefined water")
+m1    1001.50c  -0.1119   $ H-1
+      8016.50c  -0.8881   $ O-16
+mt1   lwtr.20t
+
+
+
+$ (Khong dung m2 trong file nay - vung target duoc thay bang nuoc m1 de lam baseline)
+
+
+[ Surface ]
+$ --- vung trong / target (r=10->30, 10 lop 2cm) ---
+1    so   10.0    $ r=10
+2    so   12.0    $ r=12
+3    so   14.0    $ r=14
+4    so   16.0    $ r=16
+5    so   18.0    $ r=18
+6    so   20.0    $ r=20
+7    so   22.0    $ r=22
+8    so   24.0    $ r=24
+9    so   26.0    $ r=26
+10   so   28.0    $ r=28
+11   so   30.0    $ r=30
+12   so   32.0    $ r=32
+13   so   34.0    $ r=34
+14   so   36.0    $ r=36
+15   so   38.0    $ r=38
+16   so   40.0    $ r=40
+17   so   42.0    $ r=42
+18   so   44.0    $ r=44
+19   so   46.0    $ r=46
+20   so   48.0    $ r=48
+21   so   50.0    $ r=50
+22   so   52.0    $ r=52
+23   so   54.0    $ r=54
+24   so   56.0    $ r=56
+25   so   58.0    $ r=58
+26   so   60.0    $ r=60
+27   so   62.0    $ r=62
+28   so   64.0    $ r=64
+29   so   66.0    $ r=66
+30   so   68.0    $ r=68
+31   so   70.0    $ r=70
+32   so   72.0    $ r=72
+33   so   74.0    $ r=74
+34   so   76.0    $ r=76
+35   so   78.0    $ r=78
+36   so   80.0    $ r=80
+37   so   82.0    $ r=82
+38   so   84.0    $ r=84
+39   so   86.0    $ r=86
+40   so   88.0    $ r=88
+41   so   90.0    $ r=90
+42   so   92.0    $ r=92
+43   so   94.0    $ r=94
+44   so   96.0    $ r=96
+45   so   98.0    $ r=98
+46   so   100.0    $ r=100
+47   so   101.0    $ vung dem, ranh gioi ngoai (r=101, cach reg146/r=100 dung 1cm)
+
+[ Cell ]
+$ vung trong cung: "Neutron Absorber" theo Fig.1 - imp=0 de GIET tan xa nguoc
+101     0            -1             $ r<10, VOID - GIET bang imp=0 trong [Importance]
+
+$ TARGET duoc thay bang NUOC (baseline khong shield), 10 lop 2cm (r=10->30)
+102    1  -1.0      1  -2        $ r=10->12
+103    1  -1.0      2  -3        $ r=12->14
+104    1  -1.0      3  -4        $ r=14->16
+105    1  -1.0      4  -5        $ r=16->18
+106    1  -1.0      5  -6        $ r=18->20
+107    1  -1.0      6  -7        $ r=20->22
+108    1  -1.0      7  -8        $ r=22->24
+109    1  -1.0      8  -9        $ r=24->26
+110    1  -1.0      9  -10        $ r=26->28
+111    1  -1.0      10  -11        $ r=28->30
+
+$ NUOC, 35 lop 2cm (r=30->100)
+112    1  -1.0     11  -12        $ r=30->32
+113    1  -1.0     12  -13        $ r=32->34
+114    1  -1.0     13  -14        $ r=34->36
+115    1  -1.0     14  -15        $ r=36->38
+116    1  -1.0     15  -16        $ r=38->40
+117    1  -1.0     16  -17        $ r=40->42
+118    1  -1.0     17  -18        $ r=42->44
+119    1  -1.0     18  -19        $ r=44->46
+120    1  -1.0     19  -20        $ r=46->48
+121    1  -1.0     20  -21        $ r=48->50
+122    1  -1.0     21  -22        $ r=50->52
+123    1  -1.0     22  -23        $ r=52->54
+124    1  -1.0     23  -24        $ r=54->56
+125    1  -1.0     24  -25        $ r=56->58
+126    1  -1.0     25  -26        $ r=58->60
+127    1  -1.0     26  -27        $ r=60->62
+128    1  -1.0     27  -28        $ r=62->64
+129    1  -1.0     28  -29        $ r=64->66
+130    1  -1.0     29  -30        $ r=66->68
+131    1  -1.0     30  -31        $ r=68->70
+132    1  -1.0     31  -32        $ r=70->72
+133    1  -1.0     32  -33        $ r=72->74
+134    1  -1.0     33  -34        $ r=74->76
+135    1  -1.0     34  -35        $ r=76->78
+136    1  -1.0     35  -36        $ r=78->80
+137    1  -1.0     36  -37        $ r=80->82
+138    1  -1.0     37  -38        $ r=82->84
+139    1  -1.0     38  -39        $ r=84->86
+140    1  -1.0     39  -40        $ r=86->88
+141    1  -1.0     40  -41        $ r=88->90
+142    1  -1.0     41  -42        $ r=90->92
+143    1  -1.0     42  -43        $ r=92->94
+144    1  -1.0     43  -44        $ r=94->96
+145    1  -1.0     44  -45        $ r=96->98
+146    1  -1.0     45  -46        $ r=98->100
+147    0            46  -47        $ vung dem, khong khi/rong (r=100->101)
+148   -1            47             $ the gioi ben ngoai - material=-1 (PHITS yeu cau outer void)
+
+[ Importance ]
+part = neutron
+  reg   imp
+  101     0        $ absorber trong cung - GIET het (chan tan xa nguoc)
+  102     1        $ target, r=10->12
+  103     1        $ target, r=12->14
+  104     1        $ target, r=14->16
+  105     1        $ target, r=16->18
+  106     1        $ target, r=18->20
+  107     1        $ target, r=20->22
+  108     1        $ target, r=22->24
+  109     1        $ target, r=24->26
+  110     1        $ target, r=26->28
+  111     1        $ target, r=28->30
+  112      1      $ nuoc, r=30->32
+  113      1      $ nuoc, r=32->34
+  114      1      $ nuoc, r=34->36
+  115      1      $ nuoc, r=36->38
+  116      2      $ nuoc, r=38->40
+  117      2      $ nuoc, r=40->42
+  118      2      $ nuoc, r=42->44
+  119      2      $ nuoc, r=44->46
+  120      2      $ nuoc, r=46->48
+  121      4      $ nuoc, r=48->50
+  122      4      $ nuoc, r=50->52
+  123      4      $ nuoc, r=52->54
+  124      4      $ nuoc, r=54->56
+  125      4      $ nuoc, r=56->58
+  126      4      $ nuoc, r=58->60
+  127      4      $ nuoc, r=60->62
+  128      4      $ nuoc, r=62->64
+  129      8      $ nuoc, r=64->66
+  130      8      $ nuoc, r=66->68
+  131      8      $ nuoc, r=68->70
+  132      16      $ nuoc, r=70->72
+  133      16      $ nuoc, r=72->74
+  134      16      $ nuoc, r=74->76
+  135      16      $ nuoc, r=76->78
+  136      32      $ nuoc, r=78->80
+  137      64      $ nuoc, r=80->82
+  138      64      $ nuoc, r=82->84
+  139      64      $ nuoc, r=84->86
+  140      128      $ nuoc, r=86->88
+  141      128      $ nuoc, r=88->90
+  142      128      $ nuoc, r=90->92
+  143      256      $ nuoc, r=92->94
+  144      256      $ nuoc, r=94->96
+  145      256      $ nuoc, r=96->98
+  146      256      $ nuoc, r=98->100
+  147      256      $ vung dem, r=100->101
+  148      0        $ the gioi ben ngoai - GIET het
+
+$ ==================================================================
+$ TALLY: FLUX ESTIMATOR (T-Track = volume flux, dung nhu bai bao mo ta
+$ "neutron flux estimator"), khong phai T-Cross (surface current)
+$ ==================================================================
+
+[ T-Track ]
+title = Ho so thong luong neutron NHIET (E<1eV) theo do sau trong nuoc (water)
+mesh  = reg
+reg   = {112 - 146}    $ chi tinh toi r=100cm (reg 146), 35 o nuoc r=30->100, tung 2cm
+part  = neutron
+e-type = 2
+ne    = 1
+emin  = 1e-11
+emax  = 1.0e-6       $ 1eV threshold, dung Eq.(4) cua bai bao (thermal flux)
+axis  = reg
+unit  = 1
+file  = D_thermal_profile_water_fission.out
+
+
+[ Volume ]
+reg   vol
+102   3049.4393
+103   4255.8108
+104   5663.2444
+105   7271.7398
+106   9081.2972
+107   11091.9165
+108   13303.5977
+109   15716.3408
+110   18330.1459
+111   21145.0130
+112   24160.9419
+113   27377.9328
+114   30795.9856
+115   34415.1003
+116   38235.2770
+117   42256.5156
+118   46478.8161
+119   50902.1786
+120   55526.6030
+121   60352.0893
+122   65378.6375
+123   70606.2477
+124   76034.9198
+125   81664.6538
+126   87495.4498
+127   93527.3077
+128   99760.2275
+129   106194.2093
+130   112829.2530
+131   119665.3586
+132   126702.5261
+133   133940.7556
+134   141380.0470
+135   149020.4003
+136   156861.8156
+137   164904.2928
+138   173147.8319
+139   181592.4330
+140   190238.0959
+141   199084.8209
+142   208132.6077
+143   217381.4565
+144   226831.3672
+145   236482.3398
+146   246334.3744

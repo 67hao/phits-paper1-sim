@@ -1,0 +1,4 @@
+cd vào thưu mcuj input
+
+chạy lần lượt các file có trong đó , copy file kết qủa D_therminal_.out vào results 
+chạy extract_flux_v2.py để lấy kết quả 
