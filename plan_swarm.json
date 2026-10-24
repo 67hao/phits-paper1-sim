@@ -2,28 +2,14 @@
   "haoidlemystic1": {
     "1": [
       {
-        "job_name": "blank_15000keV",
-        "sub_project": "MAC_co_dinh",
-        "rel_path": "MAC_co_dinh/inputs/blank_15000keV/blank_15000keV.inp",
-        "inp_name": "blank_15000keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s6_3000keV",
+        "job_name": "s2_50keV",
         "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s6_3000keV/s6_3000keV.inp",
-        "inp_name": "s6_3000keV.inp"
+        "rel_path": "MAC_toi_uu/inputs/s2_50keV/s2_50keV.inp",
+        "inp_name": "s2_50keV.inp"
       }
     ],
-    "3": [
-      {
-        "job_name": "s6_400keV",
-        "sub_project": "R",
-        "rel_path": "R/inputs/s6_400keV/s6_400keV.inp",
-        "inp_name": "s6_400keV.inp"
-      }
-    ],
+    "2": [],
+    "3": [],
     "4": [],
     "5": [],
     "6": [],
@@ -35,20 +21,13 @@
   "vuicho": {
     "1": [
       {
-        "job_name": "blank_500keV",
-        "sub_project": "MAC_co_dinh",
-        "rel_path": "MAC_co_dinh/inputs/blank_500keV/blank_500keV.inp",
-        "inp_name": "blank_500keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s6_4000keV",
+        "job_name": "s4_500keV",
         "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s6_4000keV/s6_4000keV.inp",
-        "inp_name": "s6_4000keV.inp"
+        "rel_path": "MAC_toi_uu/inputs/s4_500keV/s4_500keV.inp",
+        "inp_name": "s4_500keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -61,20 +40,13 @@
   "haoidle4zk": {
     "1": [
       {
-        "job_name": "s1_1000keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s1_1000keV/s1_1000keV.inp",
-        "inp_name": "s1_1000keV.inp"
+        "job_name": "s2_10000keV",
+        "sub_project": "R",
+        "rel_path": "R/inputs/s2_10000keV/s2_10000keV.inp",
+        "inp_name": "s2_10000keV.inp"
       }
     ],
-    "2": [
-      {
-        "job_name": "s6_5000keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s6_5000keV/s6_5000keV.inp",
-        "inp_name": "s6_5000keV.inp"
-      }
-    ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -87,20 +59,13 @@
   "67hao": {
     "1": [
       {
-        "job_name": "s2_30keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s2_30keV/s2_30keV.inp",
-        "inp_name": "s2_30keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s1_30keV",
+        "job_name": "s3_15000keV",
         "sub_project": "R",
-        "rel_path": "R/inputs/s1_30keV/s1_30keV.inp",
-        "inp_name": "s1_30keV.inp"
+        "rel_path": "R/inputs/s3_15000keV/s3_15000keV.inp",
+        "inp_name": "s3_15000keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -113,20 +78,13 @@
   "idlemystich": {
     "1": [
       {
-        "job_name": "s2_40keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s2_40keV/s2_40keV.inp",
-        "inp_name": "s2_40keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s2_10000keV",
+        "job_name": "s5_300keV",
         "sub_project": "R",
-        "rel_path": "R/inputs/s2_10000keV/s2_10000keV.inp",
-        "inp_name": "s2_10000keV.inp"
+        "rel_path": "R/inputs/s5_300keV/s5_300keV.inp",
+        "inp_name": "s5_300keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -139,20 +97,13 @@
   "laolaolaoma09": {
     "1": [
       {
-        "job_name": "s2_50keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s2_50keV/s2_50keV.inp",
-        "inp_name": "s2_50keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s3_15000keV",
+        "job_name": "s5_80keV",
         "sub_project": "R",
-        "rel_path": "R/inputs/s3_15000keV/s3_15000keV.inp",
-        "inp_name": "s3_15000keV.inp"
+        "rel_path": "R/inputs/s5_80keV/s5_80keV.inp",
+        "inp_name": "s5_80keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -165,20 +116,13 @@
   "Bethwl": {
     "1": [
       {
-        "job_name": "s3_10000keV",
+        "job_name": "s2_50keV",
         "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s3_10000keV/s3_10000keV.inp",
-        "inp_name": "s3_10000keV.inp"
+        "rel_path": "MAC_toi_uu/inputs/s2_50keV/s2_50keV.inp",
+        "inp_name": "s2_50keV.inp"
       }
     ],
-    "2": [
-      {
-        "job_name": "s3_50keV",
-        "sub_project": "R",
-        "rel_path": "R/inputs/s3_50keV/s3_50keV.inp",
-        "inp_name": "s3_50keV.inp"
-      }
-    ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -191,20 +135,13 @@
   "coredaohaojack": {
     "1": [
       {
-        "job_name": "s4_20keV",
+        "job_name": "s4_500keV",
         "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s4_20keV/s4_20keV.inp",
-        "inp_name": "s4_20keV.inp"
+        "rel_path": "MAC_toi_uu/inputs/s4_500keV/s4_500keV.inp",
+        "inp_name": "s4_500keV.inp"
       }
     ],
-    "2": [
-      {
-        "job_name": "s4_200keV",
-        "sub_project": "R",
-        "rel_path": "R/inputs/s4_200keV/s4_200keV.inp",
-        "inp_name": "s4_200keV.inp"
-      }
-    ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -217,20 +154,13 @@
   "htvnhe": {
     "1": [
       {
-        "job_name": "s4_300keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s4_300keV/s4_300keV.inp",
-        "inp_name": "s4_300keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s4_60keV",
+        "job_name": "s2_10000keV",
         "sub_project": "R",
-        "rel_path": "R/inputs/s4_60keV/s4_60keV.inp",
-        "inp_name": "s4_60keV.inp"
+        "rel_path": "R/inputs/s2_10000keV/s2_10000keV.inp",
+        "inp_name": "s2_10000keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -243,20 +173,13 @@
   "haohue27": {
     "1": [
       {
-        "job_name": "s4_400keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s4_400keV/s4_400keV.inp",
-        "inp_name": "s4_400keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s5_300keV",
+        "job_name": "s3_15000keV",
         "sub_project": "R",
-        "rel_path": "R/inputs/s5_300keV/s5_300keV.inp",
-        "inp_name": "s5_300keV.inp"
+        "rel_path": "R/inputs/s3_15000keV/s3_15000keV.inp",
+        "inp_name": "s3_15000keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -269,20 +192,13 @@
   "fewhourtorelax": {
     "1": [
       {
-        "job_name": "s4_500keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s4_500keV/s4_500keV.inp",
-        "inp_name": "s4_500keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s5_80keV",
+        "job_name": "s5_300keV",
         "sub_project": "R",
-        "rel_path": "R/inputs/s5_80keV/s5_80keV.inp",
-        "inp_name": "s5_80keV.inp"
+        "rel_path": "R/inputs/s5_300keV/s5_300keV.inp",
+        "inp_name": "s5_300keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
@@ -295,20 +211,13 @@
   "zotactothesun": {
     "1": [
       {
-        "job_name": "s6_200keV",
-        "sub_project": "MAC_toi_uu",
-        "rel_path": "MAC_toi_uu/inputs/s6_200keV/s6_200keV.inp",
-        "inp_name": "s6_200keV.inp"
-      }
-    ],
-    "2": [
-      {
-        "job_name": "s6_300keV",
+        "job_name": "s5_80keV",
         "sub_project": "R",
-        "rel_path": "R/inputs/s6_300keV/s6_300keV.inp",
-        "inp_name": "s6_300keV.inp"
+        "rel_path": "R/inputs/s5_80keV/s5_80keV.inp",
+        "inp_name": "s5_80keV.inp"
       }
     ],
+    "2": [],
     "3": [],
     "4": [],
     "5": [],
